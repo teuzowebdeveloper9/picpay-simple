@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WdgLajb1pVM=",
+  "success": true,
+  "projectFilePath": "/home/teuzothedev/work/picpay-simple/picpay-simple.csproj",
+  "expectedPackageFiles": [
+    "/home/teuzothedev/.nuget/packages/microsoft.aspnetcore.openapi/9.0.10/microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
+    "/home/teuzothedev/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
