@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  piscapy-postgres:
+    image: postgres:16
+    container_name: piscapy-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: piscapy_db
+      POSTGRES_USER: piscapy
+      POSTGRES_PASSWORD: piscapy123
+    ports:
+      - "5432:5432"
+    volumes:
+      - piscapy_pgdata:/var/lib/postgresql/data
+    networks:
+      - piscapy-network
+
+volumes:
+  piscapy_pgdata:
+
+networks:
+  piscapy-network:
+    driver: bridge
