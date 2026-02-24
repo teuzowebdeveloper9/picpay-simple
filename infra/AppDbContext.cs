@@ -10,7 +10,7 @@ public class AppDbContext : DbContext
     {}
 
     public DbSet<WalletEntity> Wallets { get; set; }
-    public DbSet<TranferEntity> tranfers { get; set; } = null!;
+    public DbSet<TransferEntity> Transfers { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

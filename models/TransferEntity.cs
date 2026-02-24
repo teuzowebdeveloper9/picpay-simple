@@ -1,6 +1,6 @@
 namespace SimplePicPay.Models;
 
-public class TranferEntity
+public class TransferEntity
 {
     public Guid TransferId { get; set; }
     public Guid SenderId { get; set; }
@@ -10,7 +10,7 @@ public class TranferEntity
 
 
 
-    public TranferEntity(Guid transferId, Guid senderId, Guid receiverId, decimal amount)
+    public TransferEntity(Guid transferId, Guid senderId, Guid receiverId, decimal amount)
     {
         TransferId = transferId;
         SenderId = senderId;
@@ -20,3 +20,4 @@ public class TranferEntity
     }
     
 }
+

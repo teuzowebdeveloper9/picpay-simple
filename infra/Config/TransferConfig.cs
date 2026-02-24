@@ -4,9 +4,9 @@ using SimplePicPay.Models;
 
 namespace SimplePicPay.Infra.Config;
 
-public class TransferConfig : IEntityTypeConfiguration<TranferEntity>
+public class TransferConfig : IEntityTypeConfiguration<TransferEntity>
 {
-    public void Configure(EntityTypeBuilder<TranferEntity> builder)
+    public void Configure(EntityTypeBuilder<TransferEntity> builder)
     {
         builder.ToTable("transfers");
         builder.HasKey(t => t.TransferId);
